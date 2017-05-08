@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/so/Desktop/UBB/DSA/2-SLL/SSL.cpp
+SSL.h
+/Users/so/Desktop/UBB/DSA/2-SLL/SSL.h
+iostream
+-
+
+/Users/so/Desktop/UBB/DSA/2-SLL/SSL.h
+SSLNode.h
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLNode.h
+
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLIterator.cpp
+MacTypes.h
+-
+SSLIterator.h
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLIterator.h
+
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLIterator.h
+SSL.h
+/Users/so/Desktop/UBB/DSA/2-SLL/SSL.h
+SSLNode.h
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLNode.h
+
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLNode.cpp
+SSLNode.h
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLNode.h
+
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLNode.h
+
+/Users/so/Desktop/UBB/DSA/2-SLL/main.cpp
+iostream
+-
+SSL.h
+/Users/so/Desktop/UBB/DSA/2-SLL/SSL.h
+SSLIterator.h
+/Users/so/Desktop/UBB/DSA/2-SLL/SSLIterator.h
+

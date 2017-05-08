@@ -1,0 +1,49 @@
+#up {
+background-color:#FACC2E;
+}
+
+#middle{
+border-collapse:collapse;
+background-color:#FACC2E;
+}
+
+#first{
+background-color:#F5DA81;
+}
+
+#do{
+background-color:#424242;
+color:#D8D8D8;
+font-family:Times;
+text-align:justify;
+}
+
+body{
+	background-color:#F5DA81;	
+	font-family:Times;
+}
+td{
+	width:110pt;	
+	color:#8A2908;	
+	height:25pt;
+}
+.special:hover{
+	background-color:#FF8000;
+	height:25pt;
+}
+
+h1{
+	font-family:Times;
+}
+a:link{
+	color:#8A2908;
+	text-decoration:none;
+}
+
+
+a.link:visited
+{
+   color: #8A2908;
+   text-decoration: none;
+}
+

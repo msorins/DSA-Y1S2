@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DA.cpp
+DA.h
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DA.h
+
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DA.h
+
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DAIterator.cpp
+DAIterator.h
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DAIterator.h
+
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DAIterator.h
+DA.h
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DA.h
+
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/main.cpp
+iostream
+-
+DA.h
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DA.h
+DAIterator.h
+/Users/so/Desktop/UBB/DSA/1-SinglyLinkedListDynamic/DAIterator.h
+vector
+-
+
