@@ -62,7 +62,6 @@ bool HashMap<TElement>::remove(TElement el) {
 
     //Do the hashing (to get the index for the array)
     int hash = this->hash(el);
-    int prevDeleteHash = 0, deleteHash, lastHash;
 
     //If the element that we are currently searching is the first and there is nobody chaining after him
     if(this->elems[hash] == el && this->next[hash] == 0) {
@@ -76,32 +75,23 @@ bool HashMap<TElement>::remove(TElement el) {
         if(this->next[hash] == 0)
             return false;
 
-        prevDeleteHash = hash;
         hash = this->next[hash];
     }
 
-    //Element is found
-    deleteHash = hash;
-
-    //Found the last element chained
-    int nextHash = this->next[hash];
-    while(nextHash != 0) {
-        hash = nextHash;
-        nextHash = this->next[hash];
+    //And move all chained elements one step before
+    int prevHash = hash;
+    while(this->next[hash] != 0) {
+        this->elems[hash] = this->elems[ this->next[hash] ];
+        prevHash = hash;
+        hash = this->next[hash];
     }
 
-    //Last element chained found
-    lastHash = hash;
+    //Free the final element
+    this->elems[hash] = 0;
+    this->next[hash] = 0;
+    this->nextFree = max(this->nextFree, hash);
 
-    //Now I have prevDeleteHash -> deleteHash -> ... -> lastHash
-
-    if(prevDeleteHash) {
-        this->next[prevDeleteHash] = this->next[deleteHash];
-        this->elems[deleteHash] = 0;
-        this->next[deleteHash] = 0;
-        return true;
-    }
-
+    this->next[prevHash] = 0;
     return true;
 }
 template<class TElement>

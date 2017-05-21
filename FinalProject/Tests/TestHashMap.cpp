@@ -62,7 +62,6 @@ void TestHashMap::testRemove() {
     assert( h.remove(15) );
     assert( h.find(15) );
 
-    cout<<h<<"\n";
     assert( h.remove(15) );
     assert( !h.find(15) );
 
@@ -75,39 +74,54 @@ void TestHashMap::testRemove() {
     h.insert(68);
     h.insert(85); //BYE2
 
-    cout<<h<<"\n";
-    /*
+
     assert(h.remove(51));
     assert(!h.find(51));
 
-    cout<<h<<"\n";
 
     assert(h.find(68));
     assert(h.find(85));
     assert(h.find(17));
     assert(h.find(34));
 
-    //cout<<h<<"\n";
+
     assert(h.remove(85));
     assert(!h.find(85));
 
-
-    cout<<h<<"\n";
-     */
-    //assert(h.remove(17));
-    //assert(!h.remove(17));
-    //assert(!h.find(17));
-    //assert(h.find(34));
-    //assert(h.find(68));
+    assert(h.remove(17));
+    assert(!h.remove(17));
+    assert(!h.find(17));
+    assert(h.find(34));
+    assert(h.find(68));
 
 
-    //assert(h.remove(34));
-    //assert(!h.find(34));
-    //assert(h.find(68));
+    assert(h.remove(34));
+    assert(!h.find(34));
+    assert(h.find(68));
 
+    assert(h.remove(68));
+    assert(!h.find(68));
 
+    h.insert(5);
+    h.insert(5);
+    h.insert(87);
+    h.insert(5);
+    h.insert(5);
+    h.insert(5);
 
+    assert(h.remove(5));
+    assert(h.find(87));
+    assert(h.remove(5));
+    assert(h.find(87));
+    assert(h.remove(5));
+    assert(h.find(87));
+    assert(h.remove(5));
+    assert(h.find(87));
+    assert(h.remove(5));
+    assert(h.find(87));
 
+    assert(h.remove(87));
+    assert(!h.find(87));
 }
 
 void TestHashMap::testFind() {
