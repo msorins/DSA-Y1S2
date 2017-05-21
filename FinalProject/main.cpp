@@ -1,6 +1,4 @@
 #include <iostream>
-#include "Map/Map.h"
-#include "Map/MapIterator.h"
 #include "HashMap/HashMap.h"
 #include "Tests/TestHashMap.h"
 
@@ -32,7 +30,7 @@ int main() {
     h.insert(12);
     h.insert(24);
     h.insert(24);
-    cout<<h;
+    //cout<<h;
 
     TestHashMap test;
 

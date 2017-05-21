@@ -94,6 +94,18 @@
 		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h">
 			<Option target="DSA_4MAP"/>
 		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.cpp">
+			<Option target="DSA_4MAP"/>
+		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.h">
+			<Option target="DSA_4MAP"/>
+		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.cpp">
+			<Option target="DSA_4MAP"/>
+		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h">
+			<Option target="DSA_4MAP"/>
+		</Unit>
 		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestHashMap.cpp">
 			<Option target="DSA_4MAP"/>
 		</Unit>

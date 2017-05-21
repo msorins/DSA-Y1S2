@@ -81,9 +81,33 @@ CMakeFiles/DSA_4MAP.dir/main.cpp.o.provides: CMakeFiles/DSA_4MAP.dir/main.cpp.o.
 CMakeFiles/DSA_4MAP.dir/main.cpp.o.provides.build: CMakeFiles/DSA_4MAP.dir/main.cpp.o
 
 
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o: CMakeFiles/DSA_4MAP.dir/flags.make
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o: ../Map/Elem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o -c /Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.cpp
+
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.cpp > CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.i
+
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.cpp -o CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.s
+
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o.requires:
+
+.PHONY : CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o.requires
+
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o.provides: CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o.requires
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o.provides.build
+.PHONY : CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o.provides
+
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o.provides.build: CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o
+
+
 CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o: CMakeFiles/DSA_4MAP.dir/flags.make
 CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o: ../Exception/Exception.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o -c /Users/so/Desktop/UBB/DSA/FinalProject/Exception/Exception.cpp
 
 CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o.provides.build: CMakeFiles/DSA
 
 CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o: CMakeFiles/DSA_4MAP.dir/flags.make
 CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o: ../HashMap/HashMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o -c /Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.cpp
 
 CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o.provides.build: CMakeFiles/DSA_4MA
 
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: CMakeFiles/DSA_4MAP.dir/flags.make
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../Tests/TestHashMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o -c /Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestHashMap.cpp
 
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.i: cmake_force
@@ -153,23 +177,51 @@ CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o.provides: CMakeFiles/DSA_4MAP.di
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o.provides.build: CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o
 
 
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o: CMakeFiles/DSA_4MAP.dir/flags.make
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o: ../Map/Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o -c /Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.cpp
+
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.cpp > CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.i
+
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.cpp -o CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.s
+
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o.requires:
+
+.PHONY : CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o.requires
+
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o.provides: CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o.requires
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o.provides.build
+.PHONY : CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o.provides
+
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o.provides.build: CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o
+
+
 # Object files for target DSA_4MAP
 DSA_4MAP_OBJECTS = \
 "CMakeFiles/DSA_4MAP.dir/main.cpp.o" \
+"CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o" \
 "CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o" \
 "CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o" \
-"CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o"
+"CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o" \
+"CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o"
 
 # External object files for target DSA_4MAP
 DSA_4MAP_EXTERNAL_OBJECTS =
 
 DSA_4MAP: CMakeFiles/DSA_4MAP.dir/main.cpp.o
+DSA_4MAP: CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o
 DSA_4MAP: CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o
 DSA_4MAP: CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o
 DSA_4MAP: CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o
+DSA_4MAP: CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o
 DSA_4MAP: CMakeFiles/DSA_4MAP.dir/build.make
 DSA_4MAP: CMakeFiles/DSA_4MAP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable DSA_4MAP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/so/Desktop/UBB/DSA/FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable DSA_4MAP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DSA_4MAP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,9 +230,11 @@ CMakeFiles/DSA_4MAP.dir/build: DSA_4MAP
 .PHONY : CMakeFiles/DSA_4MAP.dir/build
 
 CMakeFiles/DSA_4MAP.dir/requires: CMakeFiles/DSA_4MAP.dir/main.cpp.o.requires
+CMakeFiles/DSA_4MAP.dir/requires: CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o.requires
 CMakeFiles/DSA_4MAP.dir/requires: CMakeFiles/DSA_4MAP.dir/Exception/Exception.cpp.o.requires
 CMakeFiles/DSA_4MAP.dir/requires: CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o.requires
 CMakeFiles/DSA_4MAP.dir/requires: CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o.requires
+CMakeFiles/DSA_4MAP.dir/requires: CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o.requires
 
 .PHONY : CMakeFiles/DSA_4MAP.dir/requires
 

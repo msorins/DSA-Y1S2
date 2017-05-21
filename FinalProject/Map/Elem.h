@@ -15,6 +15,12 @@ class Elem {
 public:
     string key;
     TElement el;
+
+public:
+    //Overload operators
+    friend bool operator== (const Elem &a, const Elem &b) {
+        return a.el == b.el;
+    };
 };
 
 

@@ -62,7 +62,7 @@ bool HashMap<TElement>::remove(TElement el) {
 
     //Do the hashing (to get the index for the array)
     int hash = this->hash(el);
-    int lastHash;
+    int prevDeleteHash = 0, deleteHash, lastHash;
 
     //If the element that we are currently searching is the first and there is nobody chaining after him
     if(this->elems[hash] == el && this->next[hash] == 0) {
@@ -76,31 +76,34 @@ bool HashMap<TElement>::remove(TElement el) {
         if(this->next[hash] == 0)
             return false;
 
-        lastHash = hash;
+        prevDeleteHash = hash;
         hash = this->next[hash];
     }
 
-    this->next[lastHash] = this->next[hash];
+    //Element is found
+    deleteHash = hash;
 
-    //We found it ... now delete it
-    this->elems[hash] = 0;
-    this->nextFree = max(this->nextFree, hash);
+    //Found the last element chained
+    int nextHash = this->next[hash];
+    while(nextHash != 0) {
+        hash = nextHash;
+        nextHash = this->next[hash];
+    }
 
-    //And move all chained elements one step before
-    while(this->next[hash] != 0) {
-        this->elems[hash] = this->elems[ this->next[hash] ];
-        this->next[hash] = this->next[ this->next[hash] ];
-        hash = this->next[hash];
+    //Last element chained found
+    lastHash = hash;
+
+    //Now I have prevDeleteHash -> deleteHash -> ... -> lastHash
+
+    if(prevDeleteHash) {
+        this->next[prevDeleteHash] = this->next[deleteHash];
+        this->elems[deleteHash] = 0;
+        this->next[deleteHash] = 0;
+        return true;
     }
 
     return true;
 }
-
-template<class TElement>
-int HashMap<TElement>::hash(int el) {
-    return el % this->m;
-}
-
 template<class TElement>
 void HashMap<TElement>::assignNextFree() {
     while(this->nextFree >= 1 && this->elems[nextFree] != NULL)
@@ -147,6 +150,26 @@ int HashMap<TElement>::findPos(TElement el) {
             hash = this->next[hash];
 
     }while(true);
+}
+
+template<class TElement>
+int HashMap<TElement>::hash(int el) {
+    return el % this->m;
+}
+
+template<class TElement>
+int HashMap<TElement>::hash(Elem<TElement> el) {
+    return this->hash(el.key);
+}
+
+template<class TElement>
+int HashMap<TElement>::hash(string el) {
+    int ASCIISum = 0;
+    for(int i = 0; i < el.size(); i++) {
+        ASCIISum += (int) el[i];
+    }
+
+    return this->hash(ASCIISum);
 }
 
 

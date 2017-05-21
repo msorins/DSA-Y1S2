@@ -23,8 +23,16 @@ HashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
 vector
 -
-../Map/Map.h
-/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
+string
+-
+iostream
+-
+../Map/Elem.h
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.h
+
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.cpp
+Elem.h
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.h
 
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.h
 string.h
@@ -34,17 +42,15 @@ iostream
 list
 -
 
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.cpp
+Map.h
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
+
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
 Elem.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.h
-
-/Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.h
-Map.h
-/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
-algorithm
--
-iostream
--
+../HashMap/HashMap.h
+/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
 
 /Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestHashMap.cpp
 cassert
@@ -59,10 +65,6 @@ TestHashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/main.cpp
 iostream
 -
-Map/Map.h
-/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
-Map/MapIterator.h
-/Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.h
 HashMap/HashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
 Tests/TestHashMap.h

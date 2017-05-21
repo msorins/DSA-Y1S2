@@ -6,8 +6,11 @@
 #define DSA_4MAP_HASHMAP_H
 
 #include <vector>
-#include "../Map/Map.h"
+#include <string>
+#include <iostream>
+#include "../Map/Elem.h"
 
+using namespace std;
 #define EMPTY 0
 
 template<class TElement>
@@ -28,7 +31,9 @@ public:
 
     //Functionality
     int hash(int el);
-    //int hash(string el);
+    int hash(string el);
+    int hash(Elem<TElement> el);
+
     void assignNextFree();
     void insert(TElement el);
     bool remove(TElement el);
@@ -43,7 +48,7 @@ public:
          * OUTPUTS THE OBJECT
          */;
         for(int i = 0; i < hmapObj.m ; i++) {
-            output<<"( "<<hmapObj.elems[i]<<"-"<<hmapObj.next[i]<<" )\n";
+            output<<"( "<< to_string(hmapObj.elems[i])<<"-"<<to_string(hmapObj.next[i])<<" )\n";
         }
 
         return output;

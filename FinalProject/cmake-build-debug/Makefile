@@ -177,6 +177,60 @@ HashMap/HashMap.cpp.s:
 	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.s
 .PHONY : HashMap/HashMap.cpp.s
 
+Map/Elem.o: Map/Elem.cpp.o
+
+.PHONY : Map/Elem.o
+
+# target to build an object file
+Map/Elem.cpp.o:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o
+.PHONY : Map/Elem.cpp.o
+
+Map/Elem.i: Map/Elem.cpp.i
+
+.PHONY : Map/Elem.i
+
+# target to preprocess a source file
+Map/Elem.cpp.i:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.i
+.PHONY : Map/Elem.cpp.i
+
+Map/Elem.s: Map/Elem.cpp.s
+
+.PHONY : Map/Elem.s
+
+# target to generate assembly for a file
+Map/Elem.cpp.s:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.s
+.PHONY : Map/Elem.cpp.s
+
+Map/Map.o: Map/Map.cpp.o
+
+.PHONY : Map/Map.o
+
+# target to build an object file
+Map/Map.cpp.o:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o
+.PHONY : Map/Map.cpp.o
+
+Map/Map.i: Map/Map.cpp.i
+
+.PHONY : Map/Map.i
+
+# target to preprocess a source file
+Map/Map.cpp.i:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.i
+.PHONY : Map/Map.cpp.i
+
+Map/Map.s: Map/Map.cpp.s
+
+.PHONY : Map/Map.s
+
+# target to generate assembly for a file
+Map/Map.cpp.s:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.s
+.PHONY : Map/Map.cpp.s
+
 Tests/TestHashMap.o: Tests/TestHashMap.cpp.o
 
 .PHONY : Tests/TestHashMap.o
@@ -246,6 +300,12 @@ help:
 	@echo "... HashMap/HashMap.o"
 	@echo "... HashMap/HashMap.i"
 	@echo "... HashMap/HashMap.s"
+	@echo "... Map/Elem.o"
+	@echo "... Map/Elem.i"
+	@echo "... Map/Elem.s"
+	@echo "... Map/Map.o"
+	@echo "... Map/Map.i"
+	@echo "... Map/Map.s"
 	@echo "... Tests/TestHashMap.o"
 	@echo "... Tests/TestHashMap.i"
 	@echo "... Tests/TestHashMap.s"

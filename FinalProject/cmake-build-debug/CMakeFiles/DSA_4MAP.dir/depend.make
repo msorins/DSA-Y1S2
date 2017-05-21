@@ -8,18 +8,22 @@ CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o: ../Exception/Exception.h
 CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o: ../HashMap/HashMap.cpp
 CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o: ../HashMap/HashMap.h
 CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o: ../Map/Elem.h
-CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.o: ../Map/Map.h
+
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o: ../Map/Elem.cpp
+CMakeFiles/DSA_4MAP.dir/Map/Elem.cpp.o: ../Map/Elem.h
+
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o: ../HashMap/HashMap.h
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o: ../Map/Elem.h
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o: ../Map/Map.cpp
+CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o: ../Map/Map.h
 
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../HashMap/HashMap.h
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../Map/Elem.h
-CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../Map/Map.h
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../Tests/TestHashMap.cpp
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../Tests/TestHashMap.h
 
 CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../HashMap/HashMap.h
 CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Map/Elem.h
-CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Map/Map.h
-CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Map/MapIterator.h
 CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Tests/TestHashMap.h
 CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../main.cpp
 
