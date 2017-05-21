@@ -4,7 +4,9 @@
 
 #include "HashMap.h"
 #include "../Exception/Exception.h"
-
+#include <vector>
+#include <string>
+using namespace std;
 
 template<class TElement>
 HashMap<TElement>::HashMap(int m) {
@@ -14,10 +16,13 @@ HashMap<TElement>::HashMap(int m) {
 
     this->elems.reserve(m + 1);
     this->next.reserve(m + 1);
+    this->null.reserve(m + 1);
 
+    TElement el;
     for(int i = 0; i < m; i++) {
-        this->elems.push_back(NULL);
+        this->elems.push_back(el);
         this->next.push_back(0);
+        this->null.push_back(true);
     }
 
     nextFree = m-1;
@@ -37,8 +42,9 @@ void HashMap<TElement>::insert(TElement el) {
     int hash = this->hash(el);
 
     //If item slot is not occupied
-    if(this->elems[hash] == NULL) {
-        this->elems[hash] = el; 
+    if(this->null[hash] == true) {
+        this->elems[hash] = el;
+        this->null[hash] = false;
         return;
     }
     
@@ -49,6 +55,7 @@ void HashMap<TElement>::insert(TElement el) {
     //Assign it
     this->next[hash] = this->nextFree;
     this->elems[ this->nextFree ] = el;
+    this->null[ this->nextFree ] = false;
 
     //Increase the number of elements that are in the container
     this->size++;
@@ -65,7 +72,7 @@ bool HashMap<TElement>::remove(TElement el) {
 
     //If the element that we are currently searching is the first and there is nobody chaining after him
     if(this->elems[hash] == el && this->next[hash] == 0) {
-        this->elems[hash] = NULL;
+        this->null[hash] = true;
         this->nextFree = max(this->nextFree, hash);
         return true;
     }
@@ -87,7 +94,7 @@ bool HashMap<TElement>::remove(TElement el) {
     }
 
     //Free the final element
-    this->elems[hash] = 0;
+    this->null[hash] = true;
     this->next[hash] = 0;
     this->nextFree = max(this->nextFree, hash);
 
@@ -96,7 +103,7 @@ bool HashMap<TElement>::remove(TElement el) {
 }
 template<class TElement>
 void HashMap<TElement>::assignNextFree() {
-    while(this->nextFree >= 1 && this->elems[nextFree] != NULL)
+    while(this->nextFree >= 1 && this->null[nextFree] == false)
         this->nextFree--;
 }
 
@@ -143,10 +150,20 @@ int HashMap<TElement>::findPos(TElement el) {
 }
 
 template<class TElement>
-int HashMap<TElement>::hash(int el) {
-    return el % this->m;
+int HashMap<TElement>::hash(TElement el) {
+    /*
+    int ASCIISum = 0;
+    string s = to_string(el);
+    for(int i = 0; i < s.size(); i++) {
+        ASCIISum += (int) s[i];
+    }
+    return ASCIISum;
+     */
+    return 0;
+
 }
 
+/*
 template<class TElement>
 int HashMap<TElement>::hash(Elem<TElement> el) {
     return this->hash(el.key);
@@ -161,6 +178,15 @@ int HashMap<TElement>::hash(string el) {
 
     return this->hash(ASCIISum);
 }
+*/
+
+template<class TElement>
+int HashMap<TElement>::getSize() {
+    return this->size;
+}
+
+
 
 
 template class HashMap<int>;
+template class HashMap< Elem<int> >;

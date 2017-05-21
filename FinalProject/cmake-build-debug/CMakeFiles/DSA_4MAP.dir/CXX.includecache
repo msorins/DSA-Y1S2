@@ -19,6 +19,10 @@ HashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
 ../Exception/Exception.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Exception/Exception.h
+vector
+-
+string
+-
 
 /Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
 vector
@@ -45,6 +49,8 @@ list
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.cpp
 Map.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
+../Exception/Exception.h
+/Users/so/Desktop/UBB/DSA/FinalProject/Exception/Exception.h
 
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
 Elem.h
@@ -69,4 +75,6 @@ HashMap/HashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
 Tests/TestHashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestHashMap.h
+Map/Map.h
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
 

@@ -1,9 +1,12 @@
 #include <iostream>
 #include "HashMap/HashMap.h"
 #include "Tests/TestHashMap.h"
+#include "Map/Map.h"
 
 using namespace std;
 int main() {
+    TestHashMap test;
+
     /*
     Map<string> x;
 
@@ -19,6 +22,7 @@ int main() {
     }
      */
 
+    /*
     HashMap<int> h(10);
     h.insert(10);
     h.insert(15);
@@ -31,7 +35,9 @@ int main() {
     h.insert(24);
     h.insert(24);
     //cout<<h;
+     */
 
-    TestHashMap test;
+    Map<int> mp(17);
+    mp.add("masina", 10);
 
 }

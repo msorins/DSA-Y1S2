@@ -17,11 +17,19 @@ public:
     TElement el;
 
 public:
+    //Constructor
+    Elem(string key="", TElement el=NULL);
+
     //Overload operators
-    friend bool operator== (const Elem &a, const Elem &b) {
+    friend bool operator== (const Elem<TElement> &a, const Elem<TElement> &b) {
         return a.el == b.el;
     };
+
+    friend bool operator!= (const Elem<TElement> &a, const Elem<TElement> &b) {
+        return a.el != b.el;
+    };
 };
+
 
 
 #endif //DSA_4MAP_TELEM_H

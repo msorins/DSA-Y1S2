@@ -18,6 +18,7 @@ class HashMap {
 private:
     vector<TElement> elems;
     vector<int> next;
+    vector<bool> null;
     int m;
     int size;
     int nextFree;
@@ -26,13 +27,13 @@ public:
     HashMap(int m);
 
     //Setters and Getters
+    int getSize();
     vector<TElement> getElems();
     vector<int> getNexts();
 
     //Functionality
-    int hash(int el);
-    int hash(string el);
-    int hash(Elem<TElement> el);
+    int hash(TElement el);
+
 
     void assignNextFree();
     void insert(TElement el);
@@ -53,6 +54,7 @@ public:
 
         return output;
     }
+
 };
 
 

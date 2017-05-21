@@ -12,9 +12,13 @@
 template<class TElement>
 class Map {
 private:
-    HashMap< Elem<TElement> >elems;
+    int m;
+    HashMap< Elem<TElement> > *elems;
 
 public:
+    //Constructor
+    Map(int m);
+
     //Getters and Setters
     HashMap< Elem<TElement> > getElems();
 
