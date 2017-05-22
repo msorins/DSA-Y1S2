@@ -2,6 +2,8 @@
 #include "HashMap/HashMap.h"
 #include "Tests/TestHashMap.h"
 #include "Map/Map.h"
+#include "HashMap/HashMapIterator.h"
+#include "Map/MapIterator.h"
 
 using namespace std;
 int main() {
@@ -40,10 +42,18 @@ int main() {
 
     Map<int> mp(17);
     mp.add("masina", 10);
-    mp.add("masina", 23);
+    mp.add("costel", 23);
+    mp.add("jenica", 23);
+    mp.add("A", 23);
 
-    cout<<mp.size();
 
-    
+    MapIterator< int > mpIt(&mp);
+
+
+    while(mpIt.valid()) {
+        Elem<int> crt = mpIt.getCurrent();
+        cout<<crt.key<<" "<<crt.el<<"\n";
+        mpIt.next();
+    }
 
 }

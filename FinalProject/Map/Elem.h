@@ -22,11 +22,11 @@ public:
 
     //Overload operators
     friend bool operator== (const Elem<TElement> &a, const Elem<TElement> &b) {
-        return a.el == b.el;
+        return a.key == b.key;
     };
 
     friend bool operator!= (const Elem<TElement> &a, const Elem<TElement> &b) {
-        return a.el != b.el;
+        return a.key != b.key;
     };
 };
 

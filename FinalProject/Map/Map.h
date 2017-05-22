@@ -21,6 +21,7 @@ public:
 
     //Getters and Setters
     HashMap< Elem<TElement> > getElems();
+    HashMap< Elem<TElement> > *getElemsRef();
 
     //Functionality
     void add(string key, TElement value);

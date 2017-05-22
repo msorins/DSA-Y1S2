@@ -177,6 +177,33 @@ HashMap/HashMap.cpp.s:
 	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/HashMap/HashMap.cpp.s
 .PHONY : HashMap/HashMap.cpp.s
 
+HashMap/HashMapIterator.o: HashMap/HashMapIterator.cpp.o
+
+.PHONY : HashMap/HashMapIterator.o
+
+# target to build an object file
+HashMap/HashMapIterator.cpp.o:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/HashMap/HashMapIterator.cpp.o
+.PHONY : HashMap/HashMapIterator.cpp.o
+
+HashMap/HashMapIterator.i: HashMap/HashMapIterator.cpp.i
+
+.PHONY : HashMap/HashMapIterator.i
+
+# target to preprocess a source file
+HashMap/HashMapIterator.cpp.i:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/HashMap/HashMapIterator.cpp.i
+.PHONY : HashMap/HashMapIterator.cpp.i
+
+HashMap/HashMapIterator.s: HashMap/HashMapIterator.cpp.s
+
+.PHONY : HashMap/HashMapIterator.s
+
+# target to generate assembly for a file
+HashMap/HashMapIterator.cpp.s:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/HashMap/HashMapIterator.cpp.s
+.PHONY : HashMap/HashMapIterator.cpp.s
+
 Map/Elem.o: Map/Elem.cpp.o
 
 .PHONY : Map/Elem.o
@@ -230,6 +257,33 @@ Map/Map.s: Map/Map.cpp.s
 Map/Map.cpp.s:
 	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.s
 .PHONY : Map/Map.cpp.s
+
+Map/MapIterator.o: Map/MapIterator.cpp.o
+
+.PHONY : Map/MapIterator.o
+
+# target to build an object file
+Map/MapIterator.cpp.o:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/MapIterator.cpp.o
+.PHONY : Map/MapIterator.cpp.o
+
+Map/MapIterator.i: Map/MapIterator.cpp.i
+
+.PHONY : Map/MapIterator.i
+
+# target to preprocess a source file
+Map/MapIterator.cpp.i:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/MapIterator.cpp.i
+.PHONY : Map/MapIterator.cpp.i
+
+Map/MapIterator.s: Map/MapIterator.cpp.s
+
+.PHONY : Map/MapIterator.s
+
+# target to generate assembly for a file
+Map/MapIterator.cpp.s:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Map/MapIterator.cpp.s
+.PHONY : Map/MapIterator.cpp.s
 
 Tests/TestHashMap.o: Tests/TestHashMap.cpp.o
 
@@ -300,12 +354,18 @@ help:
 	@echo "... HashMap/HashMap.o"
 	@echo "... HashMap/HashMap.i"
 	@echo "... HashMap/HashMap.s"
+	@echo "... HashMap/HashMapIterator.o"
+	@echo "... HashMap/HashMapIterator.i"
+	@echo "... HashMap/HashMapIterator.s"
 	@echo "... Map/Elem.o"
 	@echo "... Map/Elem.i"
 	@echo "... Map/Elem.s"
 	@echo "... Map/Map.o"
 	@echo "... Map/Map.i"
 	@echo "... Map/Map.s"
+	@echo "... Map/MapIterator.o"
+	@echo "... Map/MapIterator.i"
+	@echo "... Map/MapIterator.s"
 	@echo "... Tests/TestHashMap.o"
 	@echo "... Tests/TestHashMap.i"
 	@echo "... Tests/TestHashMap.s"

@@ -14,12 +14,12 @@ HashMap<TElement>::HashMap(int m) {
     this->size = 0;
     this->m = m;
 
-    this->elems.reserve(m + 1);
-    this->next.reserve(m + 1);
-    this->null.reserve(m + 1);
+    this->elems.reserve(m + 2);
+    this->next.reserve(m + 2);
+    this->null.reserve(m + 2);
 
     TElement el;
-    for(int i = 0; i < m; i++) {
+    for(int i = 0; i <= m; i++) {
         this->elems.push_back(el);
         this->next.push_back(0);
         this->null.push_back(true);
@@ -172,6 +172,16 @@ int HashMap<TElement>::hash(Elem<int> el) {
     }
 
     return this->hash(ASCIISum);
+}
+
+template<class TElement>
+int HashMap<TElement>::getHashValue() {
+    return this->m;
+}
+
+template<class TElement>
+vector<bool> HashMap<TElement>::getNullElements() {
+    return this->null;
 }
 
 

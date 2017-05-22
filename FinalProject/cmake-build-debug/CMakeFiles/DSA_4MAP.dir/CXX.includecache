@@ -34,6 +34,14 @@ iostream
 ../Map/Elem.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.h
 
+/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMapIterator.cpp
+HashMapIterator.h
+/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMapIterator.h
+
+/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMapIterator.h
+HashMap.h
+/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
+
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.cpp
 Elem.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.h
@@ -58,6 +66,18 @@ Elem.h
 ../HashMap/HashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
 
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.cpp
+MapIterator.h
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.h
+../HashMap/HashMapIterator.h
+/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMapIterator.h
+
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.h
+../Map/Map.h
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
+../HashMap/HashMapIterator.h
+/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMapIterator.h
+
 /Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestHashMap.cpp
 cassert
 -
@@ -77,4 +97,8 @@ Tests/TestHashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestHashMap.h
 Map/Map.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h
+HashMap/HashMapIterator.h
+/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMapIterator.h
+Map/MapIterator.h
+/Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.h
 

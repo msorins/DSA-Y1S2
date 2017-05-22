@@ -17,6 +17,11 @@ HashMap<Elem<TElement> > Map<TElement>::getElems() {
 }
 
 template<class TElement>
+HashMap<Elem<TElement> > *Map<TElement>::getElemsRef() {
+    return this->elems;
+}
+
+template<class TElement>
 void Map<TElement>::add(string key, TElement value) {
     //Check to see if the key-value pair is not already in the container
     if(this->search(key, value))

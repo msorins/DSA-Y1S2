@@ -94,6 +94,12 @@
 		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h">
 			<Option target="DSA_4MAP"/>
 		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMapIterator.cpp">
+			<Option target="DSA_4MAP"/>
+		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMapIterator.h">
+			<Option target="DSA_4MAP"/>
+		</Unit>
 		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Map/Elem.cpp">
 			<Option target="DSA_4MAP"/>
 		</Unit>
@@ -104,6 +110,12 @@
 			<Option target="DSA_4MAP"/>
 		</Unit>
 		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Map/Map.h">
+			<Option target="DSA_4MAP"/>
+		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.cpp">
+			<Option target="DSA_4MAP"/>
+		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.h">
 			<Option target="DSA_4MAP"/>
 		</Unit>
 		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestHashMap.cpp">

@@ -28,6 +28,8 @@ public:
 
     //Setters and Getters
     int getSize();
+    int getHashValue();
+    vector<bool> getNullElements();
     vector<TElement> getElems();
     vector<int> getNexts();
 
