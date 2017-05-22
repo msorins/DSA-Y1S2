@@ -30,4 +30,5 @@ bool HashMapIterator<TElement>::valid() {
     return this->currentHash >= 1 && this->currentHash <= this->map->getHashValue();
 }
 
-template class HashMapIterator< Elem<int> >;
+template class HashMapIterator< Elem<string, int> >;
+template class HashMapIterator< Elem<int, int> >;

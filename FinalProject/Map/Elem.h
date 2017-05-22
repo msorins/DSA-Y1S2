@@ -10,22 +10,23 @@
 
 using namespace std;
 
-template<class TElement>
+template<class TKey, class TElement>
 class Elem {
 public:
-    string key;
+    TKey key;
     TElement el;
 
 public:
     //Constructor
-    Elem(string key="", TElement el=NULL);
+    Elem();
+    Elem(TKey key, TElement el);
 
     //Overload operators
-    friend bool operator== (const Elem<TElement> &a, const Elem<TElement> &b) {
+    friend bool operator== (const Elem<TKey, TElement> &a, const Elem<TKey, TElement> &b) {
         return a.key == b.key;
     };
 
-    friend bool operator!= (const Elem<TElement> &a, const Elem<TElement> &b) {
+    friend bool operator!= (const Elem<TKey, TElement> &a, const Elem<TKey, TElement> &b) {
         return a.key != b.key;
     };
 };

@@ -312,6 +312,33 @@ Tests/TestHashMap.cpp.s:
 	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.s
 .PHONY : Tests/TestHashMap.cpp.s
 
+Tests/TestMap.o: Tests/TestMap.cpp.o
+
+.PHONY : Tests/TestMap.o
+
+# target to build an object file
+Tests/TestMap.cpp.o:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Tests/TestMap.cpp.o
+.PHONY : Tests/TestMap.cpp.o
+
+Tests/TestMap.i: Tests/TestMap.cpp.i
+
+.PHONY : Tests/TestMap.i
+
+# target to preprocess a source file
+Tests/TestMap.cpp.i:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Tests/TestMap.cpp.i
+.PHONY : Tests/TestMap.cpp.i
+
+Tests/TestMap.s: Tests/TestMap.cpp.s
+
+.PHONY : Tests/TestMap.s
+
+# target to generate assembly for a file
+Tests/TestMap.cpp.s:
+	$(MAKE) -f CMakeFiles/DSA_4MAP.dir/build.make CMakeFiles/DSA_4MAP.dir/Tests/TestMap.cpp.s
+.PHONY : Tests/TestMap.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -369,6 +396,9 @@ help:
 	@echo "... Tests/TestHashMap.o"
 	@echo "... Tests/TestHashMap.i"
 	@echo "... Tests/TestHashMap.s"
+	@echo "... Tests/TestMap.o"
+	@echo "... Tests/TestMap.i"
+	@echo "... Tests/TestMap.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

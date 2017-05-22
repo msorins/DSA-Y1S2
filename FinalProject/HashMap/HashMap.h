@@ -35,7 +35,8 @@ public:
 
     //Functionality
     int hash(int el);
-    int hash(Elem<int> el);
+    int hash(Elem<string, int> el);
+    int hash(Elem<int, int> el);
 
 
     void assignNextFree();

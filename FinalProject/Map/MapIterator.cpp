@@ -5,28 +5,29 @@
 #include "MapIterator.h"
 #include "../HashMap/HashMapIterator.h"
 
-template<class TElement>
-MapIterator<TElement>::MapIterator(Map<TElement> *map) {
+template<class TKey, class TElement>
+MapIterator<TKey, TElement>::MapIterator(Map<TKey, TElement> *map) {
 
     this->map = map;
 
-    this->hashMapIt = new HashMapIterator< Elem<TElement> >(this->map->getElemsRef());
+    this->hashMapIt = new HashMapIterator< Elem<TKey, TElement> >(this->map->getElemsRef());
 }
 
-template<class TElement>
-Elem<TElement> MapIterator<TElement>::getCurrent() {
-    Elem<TElement> x = this->hashMapIt->getCurrent();
+template<class TKey, class TElement>
+Elem<TKey, TElement> MapIterator<TKey, TElement>::getCurrent() {
+    Elem<TKey, TElement> x = this->hashMapIt->getCurrent();
     return x;
 }
 
-template<class TElement>
-void MapIterator<TElement>::next() {
+template<class TKey, class TElement>
+void MapIterator<TKey, TElement>::next() {
     this->hashMapIt->next();
 }
 
-template<class TElement>
-bool MapIterator<TElement>::valid() {
+template<class TKey, class TElement>
+bool MapIterator<TKey, TElement>::valid() {
     return this->hashMapIt->valid();
 }
 
-template class MapIterator<int>;
+template class MapIterator<string, int>;
+template class MapIterator<int, int>;

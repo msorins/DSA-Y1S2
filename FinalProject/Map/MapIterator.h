@@ -8,18 +8,18 @@
 #include "../Map/Map.h"
 #include "../HashMap/HashMapIterator.h"
 
-template<class TElement>
+template<class TKey, class TElement>
 class MapIterator {
 private:
-    Map<TElement> *map;
-    HashMapIterator< Elem<TElement> > *hashMapIt;
+    Map<TKey, TElement> *map;
+    HashMapIterator< Elem<TKey, TElement> > *hashMapIt;
 
 public:
     //Constructor
-    MapIterator(Map<TElement> *map);
+    MapIterator(Map<TKey, TElement> *map);
 
     //Functionality
-    Elem<TElement> getCurrent();
+    Elem<TKey, TElement> getCurrent();
     void next();
     bool valid();
 };

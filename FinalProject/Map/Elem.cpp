@@ -4,12 +4,18 @@
 
 #include "Elem.h"
 
-template<class TElement>
-Elem<TElement>::Elem(string key, TElement el) {
+template<class TKey, class TElement>
+Elem<TKey, TElement>::Elem(TKey key, TElement el) {
     this->key = key;
     this->el = el;
 }
 
-template class Elem<string>;
-template class Elem<int>;
+template<class TKey, class TElement>
+Elem<TKey, TElement>::Elem() {
+
+}
+
+
+template class Elem<int, int>;
+template class Elem<string, int>;
 

@@ -165,13 +165,18 @@ int HashMap<TElement>::hash(int el) {
 }
 
 template<class TElement>
-int HashMap<TElement>::hash(Elem<int> el) {
+int HashMap<TElement>::hash(Elem<string, int> el) {
     int ASCIISum = 0;
     for(int i = 0; i < el.key.size(); i++) {
         ASCIISum += (int) el.key[i];
     }
 
     return this->hash(ASCIISum);
+}
+
+template<class TElement>
+int HashMap<TElement>::hash(Elem<int, int> el) {
+    return el.key % this->m;
 }
 
 template<class TElement>
@@ -186,4 +191,5 @@ vector<bool> HashMap<TElement>::getNullElements() {
 
 
 template class HashMap<int>;
-template class HashMap< Elem<int> >;
+template class HashMap< Elem<string, int> >;
+template class HashMap< Elem<int, int> >;

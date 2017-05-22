@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DSA_4MAP.dir/Map/Map.cpp.o"
   "CMakeFiles/DSA_4MAP.dir/HashMap/HashMapIterator.cpp.o"
   "CMakeFiles/DSA_4MAP.dir/Map/MapIterator.cpp.o"
+  "CMakeFiles/DSA_4MAP.dir/Tests/TestMap.cpp.o"
   "DSA_4MAP.pdb"
   "DSA_4MAP"
 )

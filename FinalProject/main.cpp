@@ -40,20 +40,42 @@ int main() {
      */
 
 
-    Map<int> mp(17);
+    Map<string, int> mp(17);
     mp.add("masina", 10);
     mp.add("costel", 23);
     mp.add("jenica", 23);
     mp.add("A", 23);
 
 
-    MapIterator< int > mpIt(&mp);
+    MapIterator< string, int > mpIt(&mp);
 
 
     while(mpIt.valid()) {
-        Elem<int> crt = mpIt.getCurrent();
+        Elem<string, int> crt = mpIt.getCurrent();
         cout<<crt.key<<" "<<crt.el<<"\n";
         mpIt.next();
+    }
+
+
+
+    //MAP 2
+    cout<<"\n\n\n";
+
+    Map<int, int> mpI(17);
+    mpI.add(1, 10);
+    mpI.add(2, 23);
+    mpI.add(3, 23);
+    mpI.add(4, 23);
+
+
+
+    MapIterator< int, int > mpItI(&mpI);
+
+
+    while(mpItI.valid()) {
+        Elem<int, int> crt = mpItI.getCurrent();
+        cout<<crt.key<<" "<<crt.el<<"\n";
+        mpItI.next();
     }
 
 }

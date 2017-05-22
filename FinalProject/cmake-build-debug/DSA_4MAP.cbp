@@ -124,6 +124,12 @@
 		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestHashMap.h">
 			<Option target="DSA_4MAP"/>
 		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestMap.cpp">
+			<Option target="DSA_4MAP"/>
+		</Unit>
+		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestMap.h">
+			<Option target="DSA_4MAP"/>
+		</Unit>
 		<Unit filename="/Users/so/Desktop/UBB/DSA/FinalProject/main.cpp">
 			<Option target="DSA_4MAP"/>
 		</Unit>

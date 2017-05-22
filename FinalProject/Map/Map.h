@@ -9,24 +9,24 @@
 #include "Elem.h"
 #include "../HashMap/HashMap.h"
 
-template<class TElement>
+template<class TKey, class TElement>
 class Map {
 private:
     int m;
-    HashMap< Elem<TElement> > *elems;
+    HashMap< Elem<TKey, TElement> > *elems;
 
 public:
     //Constructor
     Map(int m);
 
     //Getters and Setters
-    HashMap< Elem<TElement> > getElems();
-    HashMap< Elem<TElement> > *getElemsRef();
+    HashMap< Elem<TKey, TElement> > getElems();
+    HashMap< Elem<TKey, TElement> > *getElemsRef();
 
     //Functionality
-    void add(string key, TElement value);
-    bool remove(string key);
-    bool search(string key, TElement value);
+    void add(TKey key, TElement value);
+    bool remove(TKey key);
+    bool search(TKey key, TElement value);
     int size();
 };
 
