@@ -25,8 +25,8 @@ public:
 
     //Functionality
     void add(TKey key, TElement value);
-    bool remove(TKey key);
-    bool search(TKey key, TElement value);
+    bool erase(TKey key);
+    bool find(TKey key);
     int size();
 };
 

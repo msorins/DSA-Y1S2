@@ -4,17 +4,19 @@
 #include "Map/Map.h"
 #include "HashMap/HashMapIterator.h"
 #include "Map/MapIterator.h"
+#include "Tests/TestMap.h"
 
 using namespace std;
 int main() {
-    TestHashMap test;
+    TestHashMap testHashMap;
+    TestMap testMap;
 
     /*
     Map<string> x;
 
     x.add("masina", "Lamborghini");
     x.add("motocicleta", "Kawasaky");
-    x.remove("masina");
+    x.erase("masina");
     x.insert("masina", "Lamborghini");
 
     MapIterator<string> it(&x);

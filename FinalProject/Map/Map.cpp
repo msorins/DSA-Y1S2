@@ -24,7 +24,7 @@ HashMap<Elem<TKey, TElement> > *Map<TKey, TElement>::getElemsRef() {
 template<class TKey, class TElement>
 void Map<TKey, TElement>::add(TKey key, TElement value) {
     //Check to see if the key-value pair is not already in the container
-    if(this->search(key, value))
+    if(this->find(key))
         throw Exception("Element already in map");
 
     Elem<TKey, TElement> el(key, value);
@@ -32,9 +32,9 @@ void Map<TKey, TElement>::add(TKey key, TElement value) {
 }
 
 template<class TKey, class TElement>
-bool Map<TKey, TElement>::remove(TKey key) {
+bool Map<TKey, TElement>::erase(TKey key) {
     //Check to see if the key-value pair is not already in the container
-    if(!this->search(key, NULL))
+    if(!this->find(key))
         return false;
 
     Elem<TKey, TElement> el(key, NULL);
@@ -43,7 +43,7 @@ bool Map<TKey, TElement>::remove(TKey key) {
 }
 
 template<class TKey, class TElement>
-bool Map<TKey, TElement>::search(TKey key, TElement value) {
+bool Map<TKey, TElement>::find(TKey key) {
 
     Elem<TKey, TElement> el(key, NULL);
     return this->elems->find(el);

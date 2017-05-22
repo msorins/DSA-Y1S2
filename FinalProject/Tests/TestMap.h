@@ -14,7 +14,7 @@ public:
     //Functionality
     void startTests();
     void testAdd();
-    void testRemove();
+    void testErase();
     void testSearch();
 };
 

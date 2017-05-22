@@ -35,6 +35,7 @@ CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../Map/Elem.h
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../Tests/TestHashMap.cpp
 CMakeFiles/DSA_4MAP.dir/Tests/TestHashMap.cpp.o: ../Tests/TestHashMap.h
 
+CMakeFiles/DSA_4MAP.dir/Tests/TestMap.cpp.o: ../Exception/Exception.h
 CMakeFiles/DSA_4MAP.dir/Tests/TestMap.cpp.o: ../HashMap/HashMap.h
 CMakeFiles/DSA_4MAP.dir/Tests/TestMap.cpp.o: ../Map/Elem.h
 CMakeFiles/DSA_4MAP.dir/Tests/TestMap.cpp.o: ../Map/Map.h
@@ -47,5 +48,6 @@ CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Map/Elem.h
 CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Map/Map.h
 CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Map/MapIterator.h
 CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Tests/TestHashMap.h
+CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../Tests/TestMap.h
 CMakeFiles/DSA_4MAP.dir/main.cpp.o: ../main.cpp
 

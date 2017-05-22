@@ -78,6 +78,7 @@ bool HashMap<TElement>::remove(TElement el) {
     if(this->elems[hash] == el && this->next[hash] == 0) {
         this->null[hash] = true;
         this->nextFree = max(this->nextFree, hash);
+        this->size--;
         return true;
     }
 
@@ -93,6 +94,7 @@ bool HashMap<TElement>::remove(TElement el) {
     int prevHash = hash;
     while(this->next[hash] != 0) {
         this->elems[hash] = this->elems[ this->next[hash] ];
+        this->null[hash] = this->null[ this->next[hash] ];
         prevHash = hash;
         hash = this->next[hash];
     }
@@ -103,6 +105,7 @@ bool HashMap<TElement>::remove(TElement el) {
     this->nextFree = max(this->nextFree, hash);
 
     this->next[prevHash] = 0;
+    this->size--;
     return true;
 }
 template<class TElement>
