@@ -32,7 +32,8 @@ public:
     vector<int> getNexts();
 
     //Functionality
-    int hash(TElement el);
+    int hash(int el);
+    int hash(Elem<int> el);
 
 
     void assignNextFree();

@@ -45,6 +45,7 @@ void HashMap<TElement>::insert(TElement el) {
     if(this->null[hash] == true) {
         this->elems[hash] = el;
         this->null[hash] = false;
+        this->size++;
         return;
     }
     
@@ -70,6 +71,9 @@ bool HashMap<TElement>::remove(TElement el) {
     //Do the hashing (to get the index for the array)
     int hash = this->hash(el);
 
+    if(this->null[hash])
+        return false;
+
     //If the element that we are currently searching is the first and there is nobody chaining after him
     if(this->elems[hash] == el && this->next[hash] == 0) {
         this->null[hash] = true;
@@ -79,7 +83,7 @@ bool HashMap<TElement>::remove(TElement el) {
 
     //Find the element we are searching for
     while(this->elems[hash] != el) {
-        if(this->next[hash] == 0)
+        if( this->next[hash] == 0)
             return false;
 
         hash = this->next[hash];
@@ -134,7 +138,7 @@ int HashMap<TElement>::findPos(TElement el) {
     //If item slot is not occupied
     do {
         //We found th element (return the position)
-        if(this->elems[hash] == el)
+        if(this->null[hash] == false && this->elems[hash] == el)
             return hash;
 
         //Else go to the next one
@@ -150,42 +154,25 @@ int HashMap<TElement>::findPos(TElement el) {
 }
 
 template<class TElement>
-int HashMap<TElement>::hash(TElement el) {
-    /*
-    int ASCIISum = 0;
-    string s = to_string(el);
-    for(int i = 0; i < s.size(); i++) {
-        ASCIISum += (int) s[i];
-    }
-    return ASCIISum;
-     */
-    return 0;
-
-}
-
-/*
-template<class TElement>
-int HashMap<TElement>::hash(Elem<TElement> el) {
-    return this->hash(el.key);
-}
-
-template<class TElement>
-int HashMap<TElement>::hash(string el) {
-    int ASCIISum = 0;
-    for(int i = 0; i < el.size(); i++) {
-        ASCIISum += (int) el[i];
-    }
-
-    return this->hash(ASCIISum);
-}
-*/
-
-template<class TElement>
 int HashMap<TElement>::getSize() {
     return this->size;
 }
 
+template<class TElement>
+int HashMap<TElement>::hash(int el) {
+    return el % this->m;
 
+}
+
+template<class TElement>
+int HashMap<TElement>::hash(Elem<int> el) {
+    int ASCIISum = 0;
+    for(int i = 0; i < el.key.size(); i++) {
+        ASCIISum += (int) el.key[i];
+    }
+
+    return this->hash(ASCIISum);
+}
 
 
 template class HashMap<int>;

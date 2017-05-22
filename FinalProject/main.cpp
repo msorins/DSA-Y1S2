@@ -37,7 +37,13 @@ int main() {
     //cout<<h;
      */
 
+
     Map<int> mp(17);
     mp.add("masina", 10);
+    mp.add("masina", 23);
+
+    cout<<mp.size();
+
+    
 
 }
