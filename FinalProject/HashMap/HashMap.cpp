@@ -192,7 +192,13 @@ vector<bool> HashMap<TElement>::getNullElements() {
     return this->null;
 }
 
+template<class TElement>
+int HashMap<TElement>::hash(Elem<double, double> el) {
+
+    return ( (int) (el.key + 10005) * 10000) % this->m;
+}
 
 template class HashMap<int>;
 template class HashMap< Elem<string, int> >;
 template class HashMap< Elem<int, int> >;
+template class HashMap< Elem<double, double> >;

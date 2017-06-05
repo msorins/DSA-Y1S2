@@ -17,5 +17,6 @@ Elem<TKey, TElement>::Elem() {
 
 
 template class Elem<int, int>;
+template class Elem<double, double>;
 template class Elem<string, int>;
 

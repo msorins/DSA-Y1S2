@@ -27,6 +27,7 @@ public:
     void add(TKey key, TElement value);
     bool erase(TKey key);
     bool find(TKey key);
+    Elem<TKey, TElement>  get(TKey key);
     int size();
 };
 

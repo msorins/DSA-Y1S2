@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "HashMap/HashMap.h"
 #include "Tests/TestHashMap.h"
 #include "Map/Map.h"
@@ -6,78 +7,121 @@
 #include "Map/MapIterator.h"
 #include "Tests/TestMap.h"
 
+#include <cmath>
 using namespace std;
+
+struct pc {
+    double x, y;
+};
+
+void printSquare(pc pc0, pc pc1, pc pc2, pc pc3) {
+    cout<<"("<<pc0.x<<" "<<pc0.y<<")"<<", ";
+    cout<<"("<<pc1.x<<" "<<pc1.y<<")"<<", ";
+    cout<<"("<<pc2.x<<" "<<pc2.y<<")"<<", ";
+    cout<<"("<<pc3.x<<" "<<pc3.y<<")"<<", ";
+    cout<<"\n";
+}
+
+pc computePc2(pc pc0, pc pc1) {
+    /*
+     * DESCR: computes the the 2nd of the square
+     * INPUT: pc0 and pc1 are 'diagonalele'
+     */
+
+    double mijX = ( pc0.x + pc1.x ) / 2;
+    double mijY = ( pc0.y + pc1.y ) / 2;
+
+    double dX = abs(mijX - pc0.x);
+    double dY = abs(mijY - pc0.y);
+
+    pc pc2;
+
+    if(pc0.y < pc1.y) {
+        pc2.x = mijX + dY;
+        pc2.y = mijY - dX;
+    } else {
+        pc2.x = mijX - dY;
+        pc2.y = mijY - dX;
+    }
+
+    return pc2;
+}
+
+pc computePc3(pc pc0, pc pc1) {
+    /*
+     * DESCR: computes the the 3rd of the square
+     * INPUT: pc0 and pc1 are 'diagonalele'
+     */
+
+    double mijX = ( pc0.x + pc1.x ) / 2;
+    double mijY = ( pc0.y + pc1.y ) / 2;
+
+    double dX = abs(mijX - pc0.x);
+    double dY = abs(mijY - pc0.y);
+
+    pc pc3;
+
+    if(pc0.y < pc1.y) {
+        pc3.x = mijX - dY;
+        pc3.y = mijY + dX;
+    } else {
+        pc3.x = mijX + dY;
+        pc3.y = mijY + dX;
+    }
+
+    return pc3;
+}
+
 int main() {
     TestHashMap testHashMap;
     TestMap testMap;
 
-    /*
-    Map<string> x;
+    ifstream in("data.in");
 
-    x.add("masina", "Lamborghini");
-    x.add("motocicleta", "Kawasaky");
-    x.erase("masina");
-    x.insert("masina", "Lamborghini");
+    Map<double, double> mapX( 1039 );
+    int n, numberOfPoints = 0;
+    pc crtPc;
 
-    MapIterator<string> it(&x);
-    while(it.isValid()) {
-        cout<<it.getCurrent().first<<" -> "<<it.getCurrent().second<<"\n";
-        it.next();
-    }
-     */
-
-    /*
-    HashMap<int> h(10);
-    h.insert(10);
-    h.insert(15);
-    h.insert(26);
-    h.insert(30);
-    h.insert(25);
-    h.insert(35);
-    h.insert(45);
-    h.insert(12);
-    h.insert(24);
-    h.insert(24);
-    //cout<<h;
-     */
-
-
-    Map<string, int> mp(17);
-    mp.add("masina", 10);
-    mp.add("costel", 23);
-    mp.add("jenica", 23);
-    mp.add("A", 23);
-
-
-    MapIterator< string, int > mpIt(&mp);
-
-
-    while(mpIt.valid()) {
-        Elem<string, int> crt = mpIt.getCurrent();
-        cout<<crt.key<<" "<<crt.el<<"\n";
-        mpIt.next();
+    in >> n;
+    for(int i = 1; i <= n; i++) {
+        in >> crtPc.x >> crtPc.y;
+        mapX.add(crtPc.x, crtPc.y);
     }
 
-
-
-    //MAP 2
-    cout<<"\n\n\n";
-
-    Map<int, int> mpI(17);
-    mpI.add(1, 10);
-    mpI.add(2, 23);
-    mpI.add(3, 23);
-    mpI.add(4, 23);
-
-
-
-    MapIterator< int, int > mpItI(&mpI);
-
+    MapIterator< double, double > mpItI(&mapX);
+    MapIterator< double, double > *mpItJ;
 
     while(mpItI.valid()) {
-        Elem<int, int> crt = mpItI.getCurrent();
-        cout<<crt.key<<" "<<crt.el<<"\n";
+
+        mpItJ = new MapIterator<double, double> (&mapX);
+        while(mpItJ->valid()) {
+            pc pc0, pc1, pc2, pc3;
+            pc0.x = mpItI.getCurrent().key;
+            pc0.y = mpItI.getCurrent().el;
+
+            pc1.x = mpItJ->getCurrent().key;
+            pc1.y = mpItJ->getCurrent().el;
+
+            if(pc0.x == pc1.x && pc0.y == pc1.y ) {
+                mpItJ->next();
+                continue;
+            }
+
+            pc2 = computePc2(pc0, pc1);
+            pc3 = computePc3(pc0, pc1);
+
+
+            if(mapX.find(pc2.x) &&  mapX.get(pc2.x).el - pc2.y <= 0.0001) // pc2 is a match
+                if(mapX.find(pc3.x) &&  mapX.get(pc3.x).el -  pc3.y  <= 0.0001) //pc3 is a match
+                    printSquare(pc0, pc1, pc2, pc3), numberOfPoints++;
+
+            mpItJ->next();
+        }
+
+        delete mpItJ;
         mpItI.next();
     }
-
+    
+    cout<<"Total number of points: " << numberOfPoints ;
+    return 0;
 }

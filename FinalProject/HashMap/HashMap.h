@@ -37,6 +37,7 @@ public:
     int hash(int el);
     int hash(Elem<string, int> el);
     int hash(Elem<int, int> el);
+    int hash(Elem<double, double> el);
 
 
     void assignNextFree();

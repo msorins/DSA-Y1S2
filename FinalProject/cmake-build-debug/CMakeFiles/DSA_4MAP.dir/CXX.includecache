@@ -103,6 +103,8 @@ TestMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/main.cpp
 iostream
 -
+fstream
+-
 HashMap/HashMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/HashMap/HashMap.h
 Tests/TestHashMap.h
@@ -115,4 +117,6 @@ Map/MapIterator.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Map/MapIterator.h
 Tests/TestMap.h
 /Users/so/Desktop/UBB/DSA/FinalProject/Tests/TestMap.h
+cmath
+-
 

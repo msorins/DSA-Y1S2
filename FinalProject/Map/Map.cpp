@@ -54,6 +54,16 @@ int Map<TKey, TElement>::size() {
     return this->elems->getSize();
 }
 
+template<class TKey, class TElement>
+Elem<TKey, TElement> Map<TKey, TElement>::get(TKey key) {
+    int hashPos = this->elems->findPos( Elem<TKey, TElement>(key, NULL) );
+    if(hashPos == -1)
+        return Elem<TKey, TElement>(NULL, NULL);
+
+    return this->elems->getElems()[hashPos];
+}
+
 
 template class Map<string, int>;
 template class Map<int, int>;
+template class Map<double, double>;

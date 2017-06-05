@@ -31,3 +31,4 @@ bool MapIterator<TKey, TElement>::valid() {
 
 template class MapIterator<string, int>;
 template class MapIterator<int, int>;
+template class MapIterator<double, double>;

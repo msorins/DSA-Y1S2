@@ -32,3 +32,4 @@ bool HashMapIterator<TElement>::valid() {
 
 template class HashMapIterator< Elem<string, int> >;
 template class HashMapIterator< Elem<int, int> >;
+template class HashMapIterator< Elem<double, double> >;
