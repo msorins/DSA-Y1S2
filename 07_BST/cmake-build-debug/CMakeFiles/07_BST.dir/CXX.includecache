@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/so/Desktop/UBB/DSA/07_BST/BST/BST.cpp
+BST.h
+/Users/so/Desktop/UBB/DSA/07_BST/BST/BST.h
+
+/Users/so/Desktop/UBB/DSA/07_BST/BST/BST.h
+../Node/Node.h
+/Users/so/Desktop/UBB/DSA/07_BST/Node/Node.h
+
+/Users/so/Desktop/UBB/DSA/07_BST/Iterator/Iterator.cpp
+Iterator.h
+/Users/so/Desktop/UBB/DSA/07_BST/Iterator/Iterator.h
+
+/Users/so/Desktop/UBB/DSA/07_BST/Iterator/Iterator.h
+../BST/BST.h
+/Users/so/Desktop/UBB/DSA/07_BST/BST/BST.h
+iostream
+-
+stack
+-
+
+/Users/so/Desktop/UBB/DSA/07_BST/Node/Node.cpp
+Node.h
+/Users/so/Desktop/UBB/DSA/07_BST/Node/Node.h
+
+/Users/so/Desktop/UBB/DSA/07_BST/Node/Node.h
+iostream
+-
+
+/Users/so/Desktop/UBB/DSA/07_BST/main.cpp
+iostream
+-
+BST/BST.h
+/Users/so/Desktop/UBB/DSA/07_BST/BST/BST.h
+Iterator/Iterator.h
+/Users/so/Desktop/UBB/DSA/07_BST/Iterator/Iterator.h
+
