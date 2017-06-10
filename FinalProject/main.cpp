@@ -121,7 +121,7 @@ int main() {
         delete mpItJ;
         mpItI.next();
     }
-    
+
     cout<<"Total number of points: " << numberOfPoints ;
     return 0;
 }
